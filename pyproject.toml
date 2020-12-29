@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "otah"
+author = "Ong Yong Xin"
+author-email = "ongyongxin2020+github@gmail.com"
+home-page = "https://github.com/ongyx/otah"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+description-file = "README.md"
+requires-python = ">=3.6"
+
+[tool.flit.scripts]
+otah = "otah:_main"
