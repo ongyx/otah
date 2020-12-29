@@ -3,8 +3,6 @@
 create OTA manifests from iOS .ipa files for distribution outside the App Store.
 """
 
-import argparse
-import functools
 import pathlib
 import plistlib
 import re
@@ -118,7 +116,9 @@ class Manifest:
         self.zfile.close()
 
 
-if __name__ == "__main__":
+def _main():
+    import argparse
+    import functools
     import sys
     from http.server import SimpleHTTPRequestHandler
     from socketserver import TCPServer
@@ -184,3 +184,7 @@ if __name__ == "__main__":
                     sys.exit(0)
         else:
             print("Hostname not provided (did you mean --demo?)")
+
+
+if __name__ == "__main__":
+    _main()
