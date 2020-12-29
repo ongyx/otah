@@ -1,7 +1,6 @@
 # **NOTES**
 
 This test folder contains a stripped-down version of the OpenTerm .ipa file (to keep this repo small).
-To create the resources, run `build_res.py`.
 
 ## `test_create.py`
 

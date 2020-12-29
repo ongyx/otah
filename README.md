@@ -6,7 +6,7 @@ This does **not** sign the `.ipa` file itself: the app must already be signed fo
 
 ## Usage
 ```
-otah myapp.ipa -o manifest.plist -h mywebsite.com/path/to/ipa/file
+otah myapp.ipa -o manifest.plist --host http(s)://mywebsite.com/path/to/ipa/file
 ```
 
 ## License

@@ -12,7 +12,7 @@ import socket
 import zipfile
 from typing import IO, Optional, Union
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # find the app name, the .ipa file may be named differently.
 RE_PLIST_PATH = re.compile(r"Payload/(\w+).app/?(.*)")
